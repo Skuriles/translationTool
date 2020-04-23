@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required styles for MDC Web -->
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/foundation-icons.css" />
+    <link rel="stylesheet" href="assets/css/flag-icon.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Translation Tool</title>
+</head>
+
+<body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h3>Translation Tool</h3>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="menuBtn">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="mainNavBar" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-white navButton" href="#home" data-name="home">
+                            <strong>HOME</strong>
+                        </a>
+                        <a class="button is-white navButton" href="#contact" data-name="contact">
+                            <strong>CONTACT</strong>
+                        </a>
+                        <a class="button is-white navButton" href="#about" data-name="about">
+                            <strong>ABOUT</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="app"></div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="scripts/route.js"></script>
+    <script src="scripts/router.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+:root {
+  --main-bg-color: #455a64;
+}
+
+section {
+  padding-top: 1rem !important;
+  padding-bottom: 0 !important;
+}
+
+#app {
+  margin-bottom: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  background-color: var(--main-bg-color);
+  color: white;
+}
+
+.navbar h3 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.navbar-item,
+.navbar-link,
+.navbar-burger {
+  color: white;
+}
+
+.navbar-burger {
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .container.is-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-menu {
+    background-color: var(--main-bg-color);
+  }
+
+  .navbar-burger:hover {
+    background-color: var(--main-bg-color);
+    color: white;
+  }
+
+  .navbar-burger:active {
+    background-color: white;
+    color: var(--main-bg-color);
+  }
+
+  .title.is-2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar h3 {
+    font-size: 1.5em;
+    margin: 10px;
+    margin-left: 15px;
+  }
+
+  #mainNavBar {
+    display: none;
+  }
+
+  #app {
+    margin-top: 25px;
+    transition: margin-top 0.3s;
+  }
+
+  #app.menuActive {
+    margin-top: 81px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .column .button {
+    margin-top: 2rem;
+  }
+}
+
+.extraMargin {
+  margin-top: 1em;
+}
+
+.is-link {
+  color: blue;
+}

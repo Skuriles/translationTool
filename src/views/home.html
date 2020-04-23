@@ -1,0 +1,47 @@
+<div class="container is-fluid">
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-third">
+                <div class="field">
+                    <label class="label" id="inputLabel">Enter text to translate <span
+                            class="flag-icon flag-icon-us"></span></label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Enter your text" id="translateInput">
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <button class="button is-dark" id="translateBtn">TRANSLATE</button>
+                <button class="button is-dark" id="switchBtn"><i class="fi-arrow-left"></i><i
+                        class="fi-arrow-right"></i></button>
+            </div>
+            <div class="column is-one-third">
+                <div class="field ">
+                    <label class="label" id="outputLabel">Your result <span
+                            class="flag-icon flag-icon-de"></span></label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Translation result" readonly id="translateResult">
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <button class="button is-dark" id="saveBtn">SAVE</button>
+            </div>
+        </div>
+        <article class="message is-danger hidden" id="translateResultMsgBox">
+            <div class="message-header">
+                <p>Error</p>
+                <button class="delete" id="translateMsgCloseBtn"></button>
+            </div>
+            <div class="message-body" id="translateMsgBody">
+            </div>
+        </article>
+    </section>
+    <section class="section">
+        <label class="label">Video Tutorial</label>
+        <img width="100%"" height=" auto" src="assets/video/preview.png" />
+        <!-- <video src="assets/video/test.mp4" width="100%"" height=" auto" controls poster="assets/video/preview.png">
+            Video can't be played in your browser, sorry!
+        </video> -->
+    </section>
+</div>

@@ -1,0 +1,82 @@
+<div class="container is-fluid">
+  <section class="section">
+    <h2 class="title is-2">Send me an email</h2>
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Text input" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input" type="email" placeholder="Email input" />
+        <span class="icon is-small is-left">
+          <i class="fi-mail"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fi fa-exclamation-triangle"></i>
+        </span>
+      </div>
+      <!-- <p class="help is-danger">This email is invalid</p> -->
+    </div>
+
+    <div class="field">
+      <label class="label">Subject</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Your subject" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="your message..."></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox" id="termsChecked" />
+          I agree to the
+          <span id="terms" class="is-link">terms and conditions</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-dark " id="submit" disabled>Submit</button>
+      </div>
+    </div>
+    <div id="msgBoxDiv">
+      <article class="message hidden" id="emailResultMsgBox">
+        <div class="message-header">
+          <p>Message sent</p>
+          <button class="delete" id="msgCloseBtn"></button>
+        </div>
+        <div class="message-body">
+          Thank you for your message. We will come back to you as soon as possible.
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="modal" id="termsModal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Terms & Conditions</p>
+        <button class="delete" aria-label="close" id="closeTermsModal"></button>
+      </header>
+      <section class="modal-card-body">
+        TODO: "Legal note has to be added"
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-dark" id="okBtn">OK</button>
+      </footer>
+    </div>
+  </div>
+</div>

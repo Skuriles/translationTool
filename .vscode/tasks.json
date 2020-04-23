@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [{
+		"type": "npm",
+		"script": "sass",
+		"problemMatcher": [],
+		"label": "npm: sass",
+		"detail": "node-sass .src/assets/css/app.scss .src/assets/css/styles.css"
+	}]
+}
