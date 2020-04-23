@@ -2,7 +2,7 @@
     $data = array();
     $input = $_GET["input"];
     $output = $_GET["output"];
-    $text = sprintf("Input: %s \nOutput: %s", $input, $output);
+    $text = sprintf("Text to translate: %s \nTranslation result: %s", $input, $output);
     $filename = "file\\testfile.txt";
     $dirname = dirname($filename);
     if (!is_dir($dirname)) {

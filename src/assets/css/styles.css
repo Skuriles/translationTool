@@ -11,6 +11,12 @@ section {
   margin-bottom: 15px;
 }
 
+#app .container.is-fluid {
+  min-width: 300px !important;
+  height: auto;
+  overflow-x: scroll;
+}
+
 .hidden {
   display: none;
 }

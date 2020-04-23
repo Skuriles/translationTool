@@ -35,6 +35,6 @@
 
   // Does string contain special characters?
   function _s_has_special_chars( $string ) {
-    return preg_match("/^[\u00C0-\u017Fa-zA-Z'][\u00C0-\u017Fa-zA-Z-' ]?$/", $string);
+    return preg_match('/[^a-zA-ZöäüßÖÄÜ\s]/', $string);
   }
 ?>
