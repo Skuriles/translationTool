@@ -7,6 +7,10 @@ section {
   padding-bottom: 0 !important;
 }
 
+.section {
+  min-width: 300px;
+}
+
 #app {
   margin-bottom: 15px;
 }
@@ -89,10 +93,32 @@ section {
   }
 }
 
+@media screen and (min-width: 401px) {
+
+  img,
+  video {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  img,
+  video {
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 250px
+  }
+}
+
 @media screen and (min-width: 769px) {
   .column .button {
     margin-top: 2rem;
   }
+}
+
+div.section {
+  padding-top: 0.5rem;
 }
 
 .extraMargin {

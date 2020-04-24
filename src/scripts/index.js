@@ -178,14 +178,14 @@ function switchLanguage() {
 
 function setEnglish() {
   $("#translateBtn").text("TRANSLATE");
-  $("#inputLabel").html('Enter text to translate <span class="flag-icon flag-icon-us"></span>');
+  $("#inputLabel").html('Enter text <span class="flag-icon flag-icon-us"></span>');
   $("#outputLabel").html('Your result <span class="flag-icon flag-icon-de"></span>');
   $("#saveBtn").text("SAVE");
 }
 
 function setGerman() {
   $("#translateBtn").text("ÜBERSETZEN");
-  $("#inputLabel").html('Geben Sie ihren Text zum Übersetzen ein <span class="flag-icon flag-icon-de"></span>');
+  $("#inputLabel").html('Text eingeben <span class="flag-icon flag-icon-de"></span>');
   $("#outputLabel").html('Ihr Ergebnis <span class="flag-icon flag-icon-us"></span>');
   $("#saveBtn").text("SPEICHERN");
 }
